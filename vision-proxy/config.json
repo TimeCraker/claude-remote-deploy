@@ -1,0 +1,12 @@
+{
+  "proxyPort": 15722,
+  "anthropicBaseUrl": "https://token-plan-cn.xiaomimimo.com/anthropic",
+  "anthropicApiKey": "YOUR_MIMO_API_KEY",
+  "visionApiUrl": "https://token-plan-cn.xiaomimimo.com/v1/chat/completions",
+  "visionModel": "mimo-v2.5",
+  "visionApiKey": "YOUR_MIMO_API_KEY",
+  "describePrompt": "请详细描述这张图片的所有内容，包括：文字、界面元素、代码、错误信息、图表等。保持原始细节完整，不要遗漏任何信息。用中文描述。",
+  "maxTokens": 2000,
+  "timeoutMs": 60000,
+  "fallbackText": "[图片: 描述失败]"
+}

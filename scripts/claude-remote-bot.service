@@ -1,0 +1,17 @@
+[Unit]
+Description=Claude Code Remote Bot (Feishu)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/claude-remote-bot
+ExecStart=/usr/local/bin/node src/index.js
+Environment=HOME=/home/ubuntu
+Environment=PATH=/home/ubuntu/.local/bin:/usr/local/bin:/usr/local/node20/bin:/usr/bin:/bin
+EnvironmentFile=/opt/claude-remote-bot/.env
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

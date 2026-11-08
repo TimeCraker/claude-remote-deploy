@@ -1,0 +1,13 @@
+{
+  "name": "claude-remote-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.39.0",
+    "better-sqlite3": "^11.0.0"
+  }
+}

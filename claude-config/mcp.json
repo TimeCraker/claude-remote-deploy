@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "description": "Web fetch & HTML-to-markdown for real-time doc retrieval"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/ubuntu"],
+      "description": "Full filesystem read/write access under home directory"
+    },
+    "pdf": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-pdf"],
+      "description": "PDF text extraction with chunked pagination"
+    }
+  }
+}
